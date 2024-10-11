@@ -1,10 +1,11 @@
 Select a folder
-	
-remove tags from the files in the folder
 	-checks for the number of files in the Folder
-	-Iterate through each file 
-	-On a file check for the TAG 
-		- if the TAG is found and rename it with the name minus the TAG
-		- if the tag is not found Go to next file
-	-Go to next File
+		if the folder is empty > print folder is empty
+		else
+		- Open the Folder
+		- Select a file (Type doest matter)
+			-Check if it has the tag 
+			if it has the tag rename it to the current name minus the TAG
+		- increments the counter by 1
+		- Select next file
 	-If no more files remain END
