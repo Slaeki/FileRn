@@ -11,12 +11,13 @@
 int fileCount;
 
 // filern is a program designed to remove annoying prefixes, suffixes or tags when downloading multiple files
-char *DIRECTORY = "C:\\Users\\Angel\\Desktop\\TESTER";
+char *DIRECTORY = "/home/seth/Desktop/TESTER";
+char *TAG = "MARINA_";
 
 // main function
 int main() {
     fileCount = fileCounter(DIRECTORY);
-    printf("%d", fileCount);
+    printf("%d ", fileCount);
     
     return 0;
 }

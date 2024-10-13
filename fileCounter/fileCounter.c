@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <dirent.h>
+#include <string.h>
 
 int fileCounter(char *DIRECTORY){
     DIR *dir;
@@ -14,6 +15,12 @@ int fileCounter(char *DIRECTORY){
             continue;
             fileCount++;
     }
-  closedir(dir);
-  return fileCount;
+    if (fileCount == 0){
+        printf("Directory is Empty ");
+        closedir(dir);
+    } else {
+        closedir(dir);
+        return fileCount;
+    }
+    return -1;
 }
