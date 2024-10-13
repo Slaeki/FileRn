@@ -16,8 +16,7 @@ char *TAG = "MARINA_";
 
 // main function
 int main() {
-    fileCount = fileCounter(DIRECTORY);
-    printf("%d ", fileCount);
+    
     
     return 0;
 }
